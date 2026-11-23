@@ -3,7 +3,7 @@
   "version": "0.1",
   "status": "draft",
   "runtime_enabled": false,
-  "source": "synthetic learning scenario",
+  "source": "synthetic device-operation scenario",
   "problem": "A transport timeout was incorrectly described as device success.",
   "applicable_conditions": ["write tool may have side effects", "result is not confirmed"],
   "recommended_steps": ["mark result unknown", "query authoritative status if available", "reuse operation identity", "avoid automatic repeat until safe"],

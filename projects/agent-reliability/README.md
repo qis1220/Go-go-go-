@@ -1,6 +1,6 @@
-# Day 01：工具执行状态与可追溯评测
+# Agent Reliability｜工具执行状态与可追溯评测
 
-2026-11-23｜AI产品经理个人学习实验。纯模拟，无模型调用、真实设备、公司代码或用户数据。
+面向Agent工具调用的执行可靠性原型。通过模拟设备操作，验证结果确认、操作去重和异常反馈；无需模型API或真实设备即可运行。
 
 ## 用户问题与MVP
 
@@ -23,7 +23,7 @@ python3 projects/agent-reliability/demo.py
 - 模型将来可负责理解表达与提出工具调用；权限、状态、去重由代码执行。本版本不接模型。
 - 超时是传输现象，不是业务结论。可核对时以业务状态为准，否则保留unknown。
 - message_id描述业务消息；request_id/trace_id记录执行尝试；operation_id代表同一业务操作。重试不能生成新的操作ID绕过去重。
-- 日志中的span是教学结构，不声称实现完整OpenTelemetry协议。
+- 轨迹使用自定义JSON结构记录步骤，尚未接入OpenTelemetry。
 
 ## 实测结果
 
@@ -49,5 +49,3 @@ python3 projects/agent-reliability/demo.py
 ## 技术参考
 
 - [Agent模式](https://www.anthropic.com/research/building-effective-agents)
-
-本项目由AI辅助生成，验证范围与生产差距见上文。
