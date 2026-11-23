@@ -1,0 +1,70 @@
+{
+  "scope": "deterministic offline simulation; not an LLM or production benchmark",
+  "passed": 9,
+  "total": 9,
+  "cases": [
+    {
+      "case": "正常成功",
+      "expected": "succeeded",
+      "actual": "succeeded",
+      "effects": 1,
+      "passed": true
+    },
+    {
+      "case": "明确失败",
+      "expected": "failed",
+      "actual": "failed",
+      "effects": 0,
+      "passed": true
+    },
+    {
+      "case": "成功但回执超时",
+      "expected": "succeeded",
+      "actual": "succeeded",
+      "effects": 1,
+      "passed": true
+    },
+    {
+      "case": "超时且无法核对",
+      "expected": "unknown",
+      "actual": "unknown",
+      "effects": 0,
+      "passed": true
+    },
+    {
+      "case": "发送前取消",
+      "expected": "cancelled",
+      "actual": "cancelled",
+      "effects": 0,
+      "passed": true
+    },
+    {
+      "case": "设备不支持",
+      "expected": "unsupported",
+      "actual": "unsupported",
+      "effects": 0,
+      "passed": true
+    },
+    {
+      "case": "没有权限",
+      "expected": "rejected",
+      "actual": "rejected",
+      "effects": 0,
+      "passed": true
+    },
+    {
+      "case": "重复请求-success",
+      "expected": "succeeded",
+      "actual": "succeeded",
+      "effects": 1,
+      "passed": true
+    },
+    {
+      "case": "重复请求-timeout_unknown",
+      "expected": "unknown",
+      "actual": "unknown",
+      "effects": 0,
+      "passed": true
+    }
+  ]
+}

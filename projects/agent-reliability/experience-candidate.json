@@ -1,0 +1,17 @@
+{
+  "experience_id": "write-timeout-status-check",
+  "version": "0.1",
+  "status": "draft",
+  "runtime_enabled": false,
+  "source": "synthetic learning scenario",
+  "problem": "A transport timeout was incorrectly described as device success.",
+  "applicable_conditions": ["write tool may have side effects", "result is not confirmed"],
+  "recommended_steps": ["mark result unknown", "query authoritative status if available", "reuse operation identity", "avoid automatic repeat until safe"],
+  "excluded_conditions": ["do not invent query support", "do not retry a non-idempotent write without reconciliation"],
+  "counterexample": "Explicit confirmed success should be reported as success, not unknown.",
+  "evidence": ["results/evaluation.json", "results/traces.jsonl"],
+  "reviewer": null,
+  "reviewed_at": null,
+  "required_validation": ["independent regression cases", "business review", "persistent idempotency and concurrency testing before production"],
+  "rollback": "disable experience; retain mandatory code-level status checks"
+}
