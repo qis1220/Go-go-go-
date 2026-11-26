@@ -1,0 +1,4 @@
+[
+  {"name":"baseline","model":"example-model-a","base_url":"https://api.example.invalid/v1","currency":"DEMO","price_source":"synthetic","rates":{"input":2,"cached_input":0.2,"output":8},"fixture_answer":"The supplied evidence does not establish timer support.","fixture_usage":{"prompt_tokens":1000,"prompt_tokens_details":{"cached_tokens":400},"completion_tokens":100}},
+  {"name":"candidate","model":"example-model-b","base_url":"https://api.example.invalid/v1","currency":"DEMO","price_source":"synthetic","rates":{"input":1,"cached_input":0.1,"output":4},"fixture_answer":"Timer support cannot be confirmed from this evidence.","fixture_usage":{"prompt_tokens":1200,"prompt_tokens_details":{"cached_tokens":0},"completion_tokens":150}}
+]

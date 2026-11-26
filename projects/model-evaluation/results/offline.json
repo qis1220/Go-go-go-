@@ -1,0 +1,54 @@
+{
+  "scope": "offline fixture; not actual model performance or pricing",
+  "results": [
+    {
+      "config": "baseline",
+      "model": "example-model-a",
+      "mode": "offline_fixture",
+      "currency": "DEMO",
+      "price_source": "synthetic",
+      "rates_per_million": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 8
+      },
+      "status": "completed",
+      "answer": "The supplied evidence does not establish timer support.",
+      "usage": {
+        "prompt_tokens": 1000,
+        "prompt_tokens_details": {
+          "cached_tokens": 400
+        },
+        "completion_tokens": 100
+      },
+      "latency_ms": null,
+      "estimated_token_cost": "0.00208",
+      "quality_review": "unreviewed"
+    },
+    {
+      "config": "candidate",
+      "model": "example-model-b",
+      "mode": "offline_fixture",
+      "currency": "DEMO",
+      "price_source": "synthetic",
+      "rates_per_million": {
+        "input": 1,
+        "cached_input": 0.1,
+        "output": 4
+      },
+      "status": "completed",
+      "answer": "Timer support cannot be confirmed from this evidence.",
+      "usage": {
+        "prompt_tokens": 1200,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens": 150
+      },
+      "latency_ms": null,
+      "estimated_token_cost": "0.0018",
+      "quality_review": "unreviewed"
+    }
+  ],
+  "comparison_warning": "One task cannot establish model quality; manual review required."
+}

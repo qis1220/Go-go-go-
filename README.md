@@ -24,3 +24,7 @@ python3 projects/agent-reliability/demo.py
 查看终端结果，或打开 `projects/agent-reliability/results/` 下的评测报告与轨迹。
 
 当前版本使用模拟工具，不连接真实设备或模型API。实现范围及后续改进见项目说明。
+
+### [Model Evaluation](projects/model-evaluation/README.md)
+
+比较模型配置的回答、Token用量与成本。默认离线样例，可显式配置真实API；含成本口径验证与结果记录。
